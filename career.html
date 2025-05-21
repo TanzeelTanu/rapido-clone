@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link href="career.css" rel="stylesheet">
+    <title>Rapido's recruitment & Career</title>
+    <link rel="website icon" type="png" href="assests/web logo.png">    
+</head>
+<body>
+    <!--nav bar-->
+    <nav>
+       <div class="nav__bar">
+           <a href="#"><img src="assests/rapido-bike-taxi-logo-.png"loading="lazy"alt="Rapido icon"
+                class="logo"></a>
+           <div class="nav__menu__btn" id="menu-btn">
+               <a href="" class="downloadapp_mobile">Download App</a>
+               <i class="ri-menu-3-line"></i>
+           </div>
+       </div>
+       <ul class="nav__links" id="nav-links">
+            <li> <a href="home.html">Home </a></li>
+            <li> <a href="about.html">About Us</a></li>
+            <li> <a href="safety.html">Safety</a></li>
+            <li> <a href="career.html">Careers</a></li>
+            <li> <a href="blog.html">Blog</a></li>
+            <li> <a href="press.html">Press</a></li>
+            <li> <a href="contact.html">Contact Us</a></li>
+       </ul>
+       <a href="#download"class="btn btn__large">Download App</a>
+   </nav>
+   <!--career home-->
+   <section class="career_home_sec">
+    <div class="container">
+        <div class="career_home">
+            <div class="career_home_text">
+                <h4>Be a part of our team.</h4>
+                <p>We are so glad you want to join us in exploring a world of endless opportunities at Rapido.
+                     Let’s find a spot for you.</p>
+                     <a href="https://rapido.darwinbox.in/ms/candidate/careers">
+                        <button class="view_jobs" href="#">
+                            <label>View Jobs</label>
+                        </button>
+                    </a>
+            </div>
+                <div class="career_image">
+                    <div class="who_we_img">
+                        <div class="who_we_imgfirst">
+                            <img src="assests/career_home_1.png" loading="lazy" alt="Career home image 1">
+                            <div class="shape"></div>
+                        </div>
+                        <div class="who_we_imgsecond">
+                            <div class="shape_1"></div>
+                            <img src="assests/career_home_2.png" loading="lazy" alt="Career home image 2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--work with us-->
+    <section class="work_with_sec">
+        <div class="container">
+            <div class="work_with">
+                <label class="head_left">Why work with us</label>
+                <div class="benfits_wrapper">
+                    <div>
+                        <img src="assests/work_1.png" loading="lazy" alt="Work Image 1">
+                        <p>We pride ourselves on rewarding great work with great compensation.</p>
+                    </div>
+                    <div>
+                        <img src="assests/work_2.png" loading="lazy" alt="Work Image 2">
+                        <p>Flexible hours and vacation. Night owls welcome.</p>
+                    </div>
+                    <div>
+                        <img src="assests/work_3.png" loading="lazy" alt="Work Image 3">
+                        <p>Meet new cultures and enjoy our crew from all over the world </p>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="slideshow">
+                <div class="back-progress"></div>
+                <br><br>
+                <div class="mySlides fade">
+                  <img src="assests/career_carousel_1.png" class="img">
+                </div>
+                <div class="mySlides fade">
+                  <img src="assests/career_carousel_2.png" class="img" >
+                </div>
+                <div class="mySlides fade">
+                  <img src="assests/career_carousel_3.png" class="img">
+                </div>
+                <div class="mySlides fade">
+                    <img src="assests/career_carousel_4.png" class="img">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+            </div>
+                <br>
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                  <span class="dot" onclick="currentSlide(4)"></span> 
+                </div>
+                
+                <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>
+        </div>
+    </section>
+    <!--footer-->
+<section class="footer_sec">
+    <div class="container_1">
+        <div class="footer_links">
+                <label class="label">Customers app</label>
+             <div class="center">
+                <img src="assests/playstore.PNG"loading="lazy"alt="playstore">
+            </div class="center">
+                <label class="label"> Captain app </label>
+            <div class="center">
+                <img src="assests/playstore-1.PNG"loading="lazy" alt="playstore">
+            </div>
+         <label class="label">Follow Us</label>
+            <div class="contact__socials">
+                 <a href="#"><i class="ri-facebook-circle-fill"></i>
+                 <a href="#"><i class="ri-twitter-fill"></i>
+                 <a href="#"><i class="ri-linkedin-fill"></i></a>
+                 <a href="#"><i class="ri-instagram-fill"></i></a> 
+            </div>
+        </div>
+                <div class="footer_copy">
+                 <h3>© 2025 ST . All rights reserved.</h3>
+                </div>
+    </div> 
+    </section>
+
+    <script src="career.js"></script>
+</body>
+</html>
